@@ -25,16 +25,24 @@ public class Game_Manager : MonoBehaviour
 
     private CurrentGameScene _currentGameScene;
     
-
-    // Start is called before the first frame update
     void Start()
     {
-        //_levelManager = Level_Manager.GetComponent<Level_Manager>();
+        _levelManager = LevelManager.GetComponent<Level_Manager>();
+        _uiManager = UIManager.GetComponent<UI_Manager>();
+        _saveManager = SaveManager.GetComponent<Save_Manager>();
+
+        //loads saved data
+        _saveManager.loadData();
+
+        //other stuff here
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //bring up options menu
+        }
     }
 }

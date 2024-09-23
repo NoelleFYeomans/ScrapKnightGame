@@ -7,7 +7,6 @@ public class Singleton : MonoBehaviour
 {
     public static Singleton Instance;
 
-    // Start is called before the first frame update
     void Start()
     {
         if (Instance != null){
@@ -16,13 +15,6 @@ public class Singleton : MonoBehaviour
         else {
             GameObject.DontDestroyOnLoad(gameObject);
             Instance = this;
-            //possibly deal with saving here
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
