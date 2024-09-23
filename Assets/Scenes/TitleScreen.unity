@@ -520,6 +520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c3908f16850d34397389b6c5602e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelManager: {fileID: 562656503}
+  UIManager: {fileID: 426151314}
+  SaveManager: {fileID: 1341577264}
 --- !u!114 &2071853484
 MonoBehaviour:
   m_ObjectHideFlags: 0
